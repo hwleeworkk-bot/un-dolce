@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>un dolce</title>
+  <!-- un-dolce-temp stylesheet -->
+  <link rel="stylesheet" href="un-dolce-temp.css">
+  <link rel="stylesheet" href="home.css">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <!-- jquery core -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <!-- un-dolce-temp js -->
+  <script src="un-dolce-temp.js"></script>
+  <!-- fullpage plugin-->	
+  <link rel="stylesheet" type="text/css" href="fullPage.js-master/dist/fullpage.css" />
+  <script type="text/javascript" src="fullPage.js-master/dist/fullpage.js"></script>
+ </head>
+ <body>
+ <!-- header start-->
+ <!-- desktop-header start -->
+  <header class="d-header">
+	<div class="line line1"></div>
+	<h1 class="d-logo">
+		<a href="index.html"><img src="img/logo.png" alt=""></a>
+	</h1><!-- d-logo -->
+	
+	<div class="line line2"></div>
+
+	<nav class="d-nav">
+		<ul>
+			<li class="active"><a href="index.html">HOME</a></li>
+			<li><a href="brand.html">BRAND</a></li>
+			<li><a href="menu.html">MENU</a></li>
+			<li><a href="store.html">STORE</a></li>
+		</ul>
+	</nav>
+
+	<div class="line line3"></div>
+
+  </header><!-- d-header -->
+
+
+<!-- desktop-header end -->
+
+<!-- mobile-header start -->
+  <header class="m-header">
+	<h1 class="m-logo">
+		<a href="index.html">
+			<img src="img/logo2.png" alt="">
+		</a>
+	</h1><!-- m-logo -->
+
+	<nav class="m-nav">
+		<ul>
+			<li class="active"><a href="index.html">HOME</a></li>
+			<li><a href="brand.html">BRAND</a></li>
+			<li><a href="menu.html">MENU</a></li>
+			<li><a href="store.html">STORE</a></li>
+		</ul>
+	</nav><!-- m-nav -->
+	
+	<div class="m-drawer-btn">
+		<div class="wrap">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div><!-- m-drawer-btn -->
+
+	
+	<div id="myNav" class="overlay">
+	  <div class="overlay-half">
+		  <div class="downbtn">
+			<div class="wrap-left">
+				<span></span>
+				<span></span>
+			</div>
+			<div class="wrap-right">
+				<span></span>
+				<span></span>
+			</div>
+		  </div>
+
+		  <div class="overlay-content">
+			<a  class="active" href="index.html">HOME</a>
+			<a href="brand.html">BRAND</a>
+			<a href="menu.html">MENU</a>
+			<a href="store.html">STORE</a>
+		  </div><!-- overlay-content -->
+
+		  <a href="javascript:void(0)" class="closebtn" >
+			<span class="wrap">
+				<span></span>
+				<span></span>
+			</span>
+		  </a>
+	  </div><!-- overlay-half -->
+	  <div class="close-half"></div>
+	</div><!-- overlay -->
+
+
+
+  </header><!-- m_header -->
+<!-- mobile-header end -->
+<div id="fullpage">
+	<section class="section"  id="section0">
+		<div class="main-wrap">
+			<img class="m01" src="img/m01.png" alt="">
+			<img class="m02" src="img/m02.png" alt="">
+			<img class="m03"  src="img/m03.png" alt="">
+			<img class="m04"  src="img/m04.png" alt="">
+			<img class="m05"  src="img/m05.png" alt="">
+			<img class="m06"  src="img/m06.png" alt="">
+			<img class="m07"  src="img/m07.png" alt="">
+			<img class="m08"  src="img/m08.png" alt="">
+			<img class="m09"  src="img/m09.png" alt="">
+			<img class="m10"  src="img/m10.png" alt="">
+			<img class="m11"  src="img/m11.png" alt="">
+			<img class="m12"  src="img/m12.png" alt="">
+			<img class="m13"  src="img/m13.png" alt="">
+
+
+			<div class="main-logo">
+				<img src="img/main-logo.png" alt="">
+			</div><!-- main-logo -->
+		</div><!-- main-wrap -->
+	</section>
+		
+	<footer class="footer section fp-auto-height" id="section1">
+		<div class="footer-wrap">
+			<h1 class="footer-logo">
+				<a href="index.html">
+					<img src="img/footer-logo.png"  alt="">
+				</a>
+			</h1><!-- footer-logo -->
+			<div class="f-line"></div>
+			<ul class="footer-social">
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+			</ul><!-- footer-social -->
+			<ul class="footer-privacy">
+				<li><a href="">Privacy Policy</a></li>
+				<li><a href="">Address</a></li>
+				<li><a href="">Company Policy</a></li>
+			</ul><!-- footer-privacy -->
+			<p class="footer-copy">
+				copyright ⓒ un  dolce. All rights reserved.
+			</p>	
+		</div><!-- wrap -->
+	</footer>
+
+</div><!-- fullpage -->
+
+
+<script type="text/javascript">
+  var myFullpage = new fullpage('#fullpage', {
+      verticalCentered: true,
+      menu: '#menu',
+      sectionsColor: ['none', 'none', 'none']
+  });
+</script>
+
+ </body>
+</html>

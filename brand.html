@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>un dolce</title>
+  <!-- un-dolce-temp stylesheet -->
+  <link rel="stylesheet" href="un-dolce-temp.css">
+  <link rel="stylesheet" href="brand.css">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <!-- jquery core -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <!-- un-dolce-temp js -->
+  <script src="un-dolce-temp.js"></script>
+  <!-- fullpage plugin-->	
+  <link rel="stylesheet" type="text/css" href="fullPage.js-master/dist/fullpage.css" />
+  <script type="text/javascript" src="fullPage.js-master/dist/fullpage.js"></script>
+  <!-- background-image-transition -->
+  <link rel="stylesheet" href="background-image-transition/dist/backgroundTransition.min.css" />
+  <script src="background-image-transition/dist/backgroundTransition.min.js"></script>
+ </head>
+ <body>
+ <!-- header start-->
+<!-- desktop-header start -->
+  <header class="d-header">
+	<div class="line line1"></div>
+	<h1 class="d-logo">
+		<a href="index.html"><img src="img/logo.png" alt=""></a>
+	</h1><!-- d-logo -->
+	
+	<div class="line line2"></div>
+
+	<nav class="d-nav">
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li class="active"><a href="brand.html">BRAND</a></li>
+			<li><a href="menu.html">MENU</a></li>
+			<li><a href="store.html">STORE</a></li>
+		</ul>
+	</nav>
+
+	<div class="line line3"></div>
+  </header><!-- d-header -->
+<!-- desktop-header end -->
+
+<!-- mobile-header start -->
+  <header class="m-header">
+	<h1 class="m-logo">
+		<a href="index.html">
+			<img src="img/logo2.png" alt="">
+		</a>
+	</h1><!-- m-logo -->
+
+	<nav class="m-nav">
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li class="active"><a href="brand.html">BRAND</a></li>
+			<li><a href="menu.html">MENU</a></li>
+			<li><a href="store.html">STORE</a></li>
+		</ul>
+	</nav><!-- m-nav -->
+	
+	<div class="m-drawer-btn">
+		<div class="wrap">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div><!-- m-drawer-btn -->
+
+	
+	<div id="myNav" class="overlay">
+	  <div class="overlay-half">
+		  <div class="downbtn">
+			<div class="wrap-left">
+				<span></span>
+				<span></span>
+			</div>
+			<div class="wrap-right">
+				<span></span>
+				<span></span>
+			</div>
+		  </div>
+
+		  <div class="overlay-content">
+			<a href="index.html">HOME</a>
+			<a  class="active" href="brand.html">BRAND</a>
+			<a href="menu.html">MENU</a>
+			<a href="store.html">STORE</a>
+		  </div><!-- overlay-content -->
+
+		  <a href="javascript:void(0)" class="closebtn" >
+			<span class="wrap">
+				<span></span>
+				<span></span>
+			</span>
+		  </a>
+	  </div><!-- overlay-half -->
+	  <div class="close-half"></div>
+	</div><!-- overlay -->
+
+
+
+  </header><!-- m_header -->
+<!-- mobile-header end -->
+
+<div id="fullpage">
+	<section class="section backgroundTransition"  id="section0">
+		<div class="white"></div><!-- white -->
+		<h1 class="title">Un Dolce</h1>
+		<p class="content">
+			In 2020, Un Dolce started from Firenze, Italia.<br>
+			Since its opening, we were loved by macaron lovers all over the world.<br>
+			In 2020, Un Dolce started from Firenze, Italia.<br>
+			Since its opening, we were loved by macaron lovers all over the world.
+		</p>
+	</section><!-- section0 -->
+
+	<section class="section"  id="section1">
+		<p class="first">
+			A delicious Italian meringue,<br>
+			So it all begins with whole blanched almonds from California
+			– the world center for almonds –
+			that are ground and mixed with confectioner’s sugar. <br>
+			Egg whites are whisked 
+			until peaks form and natural food colorings are added 
+			to give the macarons their subtle colors. 
+			(The color is mixed in at this point so that it is perfectly uni- form.) <br>
+			As much as taste, color is essential: it too can make the mouth water. 
+		</p>
+		<p class="second">
+			Perfectly shaped shells,
+			The appareil is poured into a machine called a trémie.<br>
+			 This is the only stage that isn’t performed by hand,
+
+			because only a machine can form identical shells. <br>
+			The 14 macaron flavors and the 5 “Incroyables” are made daily, 
+			moving from the lightest to the darkest colored so none are stained. <br>
+		</p>
+		<div class="half"></div>
+	</section><!-- section1 -->
+		
+	<footer class="footer section fp-auto-height" id="section2">
+		<div class="footer-wrap">
+			<h1 class="footer-logo">
+				<a href="index.html">
+					<img src="img/footer-logo.png"  alt="">
+				</a>
+			</h1><!-- footer-logo -->
+			<div class="f-line"></div>
+			<ul class="footer-social">
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+			</ul><!-- footer-social -->
+			<ul class="footer-privacy">
+				<li><a href="">Privacy Policy</a></li>
+				<li><a href="">Address</a></li>
+				<li><a href="">Company Policy</a></li>
+			</ul><!-- footer-privacy -->
+			<p class="footer-copy">
+				copyright ⓒ un  dolce. All rights reserved.
+			</p>	
+		</div><!-- wrap -->
+	</footer>
+
+</div><!-- fullpage -->
+
+<script type="text/javascript">
+  var myFullpage = new fullpage('#fullpage', {
+      verticalCentered: true,
+      menu: '#menu',
+      sectionsColor: ['none', 'none', 'none'],
+      navigation: true,
+      navigationPosition: 'right',
+  });
+</script>
+
+<script>
+	$('.backgroundTransition').backgroundTransition({
+	  backgrounds: [
+		// at least 2 images
+		{ src:'img/brand01.png' },
+		{ src:'img/brand01-2.jpg' },
+		{ src:'img/brand01-3.jpg' }
+	  ],
+	  transitionDelay: 3,
+	  animationSpeed: 700
+
+
+	});
+
+</script>
+ </body>
+</html>

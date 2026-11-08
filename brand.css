@@ -1,0 +1,310 @@
+@charset "utf-8";
+
+/* brand.css */
+
+.section{overflow: hidden;}
+.section h1{font-family: 'Raleway-Regular';}
+.section p{font-family: 'Raleway-Regular';}
+#section0{
+	background: url(img/brand01.png) no-repeat;
+	-webkit-background-size: auto 130%;
+	background-size: auto 130%;
+	background-position: center bottom;
+	position: relative;
+	transition: 2s;}
+#section0  .white{
+	height: 100%;
+	width: 50%;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
+	background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+
+	}
+
+#section0  .title{position: absolute;
+	top: 13%;
+	left: 15%;
+	font-size: 40px;
+	font-weight: 500;
+	opacity: 1 /* !important */;
+    /* transition: all 1500ms ease; */
+	animation: title 1s;
+	animation-fill-mode: forwards;
+	transition: 0.5s;}
+
+#section0  .content{position: absolute;
+	top: 25%;
+	left: 15%;
+	font-size: 18px;
+	font-weight: 500;
+	color: #222;
+	text-shadow: 0 0 5px #fff;
+	opacity: 0;
+	animation: content 1s;
+	animation-delay: 0.5s;
+	animation-fill-mode: forwards;
+	padding-right: 30px;
+	transition: 0.5s;}
+
+@keyframes title {
+	from{top: 18%; opacity: 0;}
+	to{top: 15%; opacity: 1;}
+}
+
+@keyframes content {
+	from{top: 30%; opacity: 0;}
+	to{top: 25%; opacity: 1;}
+}
+
+
+
+
+
+#section1{
+	position: relative;}
+
+#section1 .half{
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	background: url(img/brand02.png) no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	background-position: left bottom;
+	transition: 0.5s;}
+
+#section1 p{position: absolute;
+	width: 50%;
+	text-align: right;
+	padding: 20px 20px 20px 23%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #222;
+	
+	text-shadow: 0 0 5px #fff;
+	font-size: 16px;}
+
+#section1 .first{top: 23%;
+    transition: all 1500ms ease;
+	opacity: 0 !important;}
+#section1 .second{top: 48%;
+    transition: all 1500ms ease;
+	transition-delay: 0.5s;
+	opacity: 0 !important;}
+
+
+body #fullpage  .active  .first{
+		top: 20%;
+	   opacity: 1 !important;
+    }
+
+body #fullpage  .active  .second{
+       top: 45%;
+	   opacity: 1 !important;
+	}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+	background: #fff !important;}
+
+
+
+
+/* media query------------------------------------------------------------ */
+
+@media screen and (max-width: 1500px){
+
+
+#section0  .title{position: absolute;
+	left: 20%;}
+
+#section0  .content{position: absolute;
+	left: 20%;}
+
+
+
+@keyframes title {
+	from{top: 18%; opacity: 0;}
+	to{top: 15%; opacity: 1;}
+}
+
+@keyframes content {
+	from{top: 30%; opacity: 0;}
+	to{top: 25%; opacity: 1;}
+}
+
+
+	
+#section1 .half{
+	background-size: 125%;}
+
+
+#section1 .first{top: 20%;
+    transition: all 1500ms ease;
+	opacity: 0 !important;}
+#section1 .second{top: 48%;
+    transition: all 1500ms ease;
+	transition-delay: 0.5s;
+	opacity: 0 !important;}
+
+
+body #fullpage  .active  .first{
+		top: 17%;
+	   opacity: 1 !important;
+    }
+
+body #fullpage  .active  .second{
+       top: 45%;
+	   opacity: 1 !important;
+	}
+
+
+
+
+
+
+}
+@media screen and (max-width: 1200px){
+
+
+#section0  .title{position: absolute;
+	left: 23%;}
+
+#section0  .content{position: absolute;
+	left: 23%;}
+
+
+
+#section1 .half{
+	background-size: 160%;}
+
+#section1 .first{top: 15%;
+    transition: all 1500ms ease;
+	opacity: 0 !important;}
+#section1 .second{top: 50%;
+    transition: all 1500ms ease;
+	transition-delay: 0.5s;
+	opacity: 0 !important;}
+
+
+body #fullpage  .active  .first{
+		top: 12%;
+	   opacity: 1 !important;
+    }
+
+body #fullpage  .active  .second{
+       top: 47%;
+	   opacity: 1 !important;
+	}
+
+
+
+}
+@media screen and (max-width: 960px){
+
+
+
+#section0  .title{position: absolute;
+	left: 27%;}
+
+#section0  .content{position: absolute;
+	left: 27%;
+	width: 70%;}
+
+
+
+
+
+
+
+#section1 .half{
+	background-size: 200%;}
+
+
+body #fullpage  .active  .second{
+	   opacity: 0 !important;
+	}
+
+
+
+}
+@media screen and (max-width: 768px){
+
+
+#section0  .title{position: absolute;
+	left: 15%;}
+
+#section0  .content{position: absolute;
+	left: 15%;}
+
+@keyframes title {
+	from{top: 25%; opacity: 0;}
+	to{top: 22%; opacity: 1;}
+}
+
+
+@keyframes content {
+	from{top: 40%; opacity: 0;}
+	to{top: 37%; opacity: 1;}
+}
+
+
+#section1 .half{
+	background-size: 250%;
+	background-position: -80px bottom;}
+
+#section1 p{
+	width: 60%;
+	z-index: 999;
+	padding: 20px 20px 20px 10%;}
+
+
+#section1 .first{top: 300px;}
+
+
+body #fullpage  .active  .first{
+		top: 200px;
+	   opacity: 1 !important;
+    }
+
+}
+@media screen and (max-width: 600px){
+#section0{
+	-webkit-background-size: auto 100%;
+	background-size: auto 100%;
+	background-position: -500px center;}
+
+
+#section1 .half{
+	background-size: 310%;
+	background-position: -150px center;}
+
+
+#section1 .first{top: 200px;}
+
+
+body #fullpage  .active  .first{
+		top: 100px;
+	   opacity: 1 !important;
+    }
+
+}
+@media screen and (max-width: 480px){
+
+
+#section1 p{
+	width: 80%;
+	z-index: 999;
+	padding: 20px 20px 20px 10%;}
+
+
+#section1 .half{
+	background-size: 420%;
+	background-position: -180px center;}
+
+}
+@media screen and (max-width: 360px){}

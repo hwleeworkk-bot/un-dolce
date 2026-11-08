@@ -1,0 +1,22 @@
+/*
+  Add an initial background-image to .backgroundTransition container. This image
+  should match the first image passed into the plugin's 'background' array.
+  Adding this here ensures that there is a background image loaded on page load,
+  while waiting for document.ready().
+ */
+.backgroundTransition {
+  background-image: url('https://source.unsplash.com/GFrBMipOd_E/1920x1280');
+}
+
+/*
+  The following css is merely to style the white container in the middle of the page.
+*/
+.content {
+    margin-top: 150px;
+    width: 728px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: rgba(255,255,255,.85);
+    border-radius: 3px;
+}

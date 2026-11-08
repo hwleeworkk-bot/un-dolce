@@ -1,0 +1,388 @@
+@charset "utf-8";
+
+/* menu.css */
+
+.m-header{
+	background: rgba(255,255,255,1.0);
+}
+
+.section{}
+.section  .wrap{width: 960px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;}
+.section  .wrap  .title{
+	height: 100px;
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	line-height: 100px;
+	text-align: center;
+	font-family: 'Raleway-Regular';
+	font-weight: 500;
+	color: #002865;
+	font-size: 35px;
+	position: relative;
+	transition: 0.5s;}
+.section  .wrap  .title  span{
+	position: absolute;
+	display: block;
+	width: 100px;
+	height: 5px;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#c9d9ff+0,ffaaaa+100&1+0,0.1+100 */
+background: -moz-linear-gradient(-45deg,  rgba(201,217,255,1) 0%, rgba(255,170,170,0.1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  rgba(201,217,255,1) 0%,rgba(255,170,170,0.1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  rgba(201,217,255,1) 0%,rgba(255,170,170,0.1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9d9ff', endColorstr='#1affaaaa',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+	bottom: 25px;
+	left: 50%;
+	margin-left: -50px;
+	z-index: -1;
+	animation: underline 3s ease; }
+
+@keyframes underline {
+	from {width: 0;}
+	to{width: 100px;}
+}
+
+
+.section  .wrap  .menu-list{
+	width: 100%;
+	font-family: 'Raleway-Regular';
+	color: #222;
+	overflow: hidden;}
+.section  .wrap  .menu-list:after{
+	content: '';
+	display: block;
+	clear: both;}
+.section  .wrap  .menu-list  .column{width: 32%;
+	padding: 20px 20px 40px 20px;
+	position: relative;
+	background: #F2F2F7;
+	float: left;
+	transition: margin-top 0.5s;}
+.section  .wrap  .menu-list  .c1{
+	animation: updown 1.5s ease;}
+.section  .wrap  .menu-list  .c2{
+	margin-top: 35px;
+	margin-left: 2%;
+	margin-right: 2%;
+	animation: updown 0.5s ease;}
+.section  .wrap  .menu-list  .c3{
+	animation: updown 1s ease;}
+
+@keyframes updown {
+	from {top: 200px;}
+	to{top: 0;}
+	
+}
+
+.section  .wrap  .menu-list  .column  .column-title{
+	width: 100%;
+	height: 50px;
+	margin-bottom: 20px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 24px;
+	font-weight: 500;
+	transition: 0.5s;
+	}
+
+.section  .wrap  .menu-list  .column .three{
+	overflow: visible !important;}
+.section  .wrap  .menu-list  .column .three  .polaroid{
+	width: 100%;
+	padding: 15px;
+	background: #fff;
+	margin-bottom: 20px;
+	/* box-shadow: 0px 3px 10px #aaa; */
+	position: relative;
+	overflow: visible !important;}
+.section  .wrap  .menu-list  .column .three  .polaroid  .img-frame{
+	width: 100%;
+	background: pink;
+	margin-bottom: 15px;
+	transition: background-size 0.5s;
+	}
+.section  .wrap  .menu-list  .column .three  .polaroid  .img-frame a{
+	display: block;
+	width: 100%;
+	height: 100%;}
+.section  .wrap  .menu-list  .column .three  .polaroid  .img-name{
+	width: 100%;
+	height: 30px;
+	font-size: 18px;
+	line-height: 30px;
+	text-align: center;
+	position: relative;	
+	transition: 0.5s;
+	overflow: hidden;
+	text-overflow:ellipsis;
+    white-space:nowrap;
+	}
+
+
+.section  .wrap  .menu-list  .column .three  .polaroid  span{
+	display: block;
+	position: absolute;
+	left: 50%;
+	bottom: 20px;
+	margin-left: -20%;
+	width: 0%;
+	height: 10px;
+	transition: 0.5s;
+
+}
+
+
+
+
+.section  .wrap  .menu-list  .column .three  .polaroid:hover  span ,
+.section  .wrap  .menu-list  .column .three  .polaroid:active  span {
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffe8e8+0,ffaaaa+100&1+0,0.1+100 */
+	background: -moz-linear-gradient(-45deg,  rgba(255,232,232,1) 0%, rgba(255,170,170,0.1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  rgba(255,232,232,1) 0%,rgba(255,170,170,0.1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  rgba(255,232,232,1) 0%,rgba(255,170,170,0.1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe8e8', endColorstr='#1affaaaa',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	
+	width: 40%;
+}
+
+
+
+
+
+/* img background  */
+  /* 1st column */
+	.section  .wrap  .menu-list  .c1 .three1 .polaroid:nth-child(1) .img-frame{
+		background: url(img/vanilla.jpg) no-repeat center center;
+		background-size: auto 100%;}
+	.section  .wrap  .menu-list  .c1 .three1 .polaroid:nth-child(2) .img-frame{
+		background: url(img/chocolate.jpg) no-repeat center center;
+		background-size: auto 100%;}
+	.section  .wrap  .menu-list  .c1 .three1 .polaroid:nth-child(3) .img-frame{
+		background: url(img/saltedcaramel.jpg) no-repeat center center;
+		background-size: 100% auto;}
+
+		.section  .wrap  .menu-list  .c1 .three2 .polaroid:nth-child(1) .img-frame{
+		background: url(img/mintchoco.jpg) no-repeat center center;
+		background-size: auto 100%;}
+	.section  .wrap  .menu-list  .c1 .three2 .polaroid:nth-child(2) .img-frame{
+		background: url(img/redvelvet.jpg) no-repeat center center;
+		background-size: 100% auto;}
+	.section  .wrap  .menu-list  .c1 .three2 .polaroid:nth-child(3) .img-frame{
+		background: url(img/milk.jpg) no-repeat center center;
+		background-size: auto 100%;}
+
+	
+	.section  .wrap  .menu-list  .c1 .three3 .polaroid:nth-child(1) .img-frame{
+		background: url(img/pistachio.jpg) no-repeat center center;
+		background-size: 100% auto ;}
+	.section  .wrap  .menu-list  .c1 .three3 .polaroid:nth-child(2) .img-frame{
+		background: url(img/yogurt.jpg) no-repeat center center;
+		background-size: auto 100%;}
+	.section  .wrap  .menu-list  .c1 .three3 .polaroid:nth-child(3) .img-frame{
+		background: url(img/tiramisu.jpg) no-repeat center center;
+		background-size: auto 100%;}
+
+  /* 2nd column */
+	.section  .wrap  .menu-list  .c2 .three1 .polaroid:nth-child(1) .img-frame{
+		background: url(img/pumpkin.jpg) no-repeat center center;
+		background-size: 100% auto ;}
+	.section  .wrap  .menu-list  .c2 .three1 .polaroid:nth-child(2) .img-frame{
+		background: url(img/roastedfig.jpg) no-repeat center center;
+		background-size: 100% auto;}
+	.section  .wrap  .menu-list  .c2 .three1 .polaroid:nth-child(3) .img-frame{
+		background: url(img/grapefruit.jpg) no-repeat center center;
+		background-size: auto 100%;}
+
+		.section  .wrap  .menu-list  .c2 .three2 .polaroid:nth-child(1) .img-frame{
+		background: url(img/mango.jpg) no-repeat center center;
+		background-size: auto 100%;}
+	.section  .wrap  .menu-list  .c2 .three2 .polaroid:nth-child(2) .img-frame{
+		background: url(img/peach.jpg) no-repeat center center;
+		background-size: 100% auto;}
+	.section  .wrap  .menu-list  .c2 .three2 .polaroid:nth-child(3) .img-frame{
+		background: url(img/mandarin.jpg) no-repeat center center;
+		background-size: 100% auto;}
+
+	
+	.section  .wrap  .menu-list  .c2 .three3 .polaroid:nth-child(1) .img-frame{
+		background: url(img/lychee.jpg) no-repeat center center;
+		background-size: 100% auto ;}
+	.section  .wrap  .menu-list  .c2 .three3 .polaroid:nth-child(2) .img-frame{
+		background: url(img/lemon.jpg) no-repeat center center;
+		background-size: auto 100%;}
+	.section  .wrap  .menu-list  .c2 .three3 .polaroid:nth-child(3) .img-frame{
+		background: url(img/greenapple.jpg) no-repeat center top;
+		background-size: 100% auto;}
+
+  
+  /* 3rd column */
+	.section  .wrap  .menu-list  .c3 .three1 .polaroid:nth-child(1) .img-frame{
+		background: url(img/raspberry.jpg) no-repeat center center;
+		background-size: 100% auto ;}
+	.section  .wrap  .menu-list  .c3 .three1 .polaroid:nth-child(2) .img-frame{
+		background: url(img/tiramisu.jpg) no-repeat center center;
+		background-size: auto 100%;}
+	.section  .wrap  .menu-list  .c3 .three1 .polaroid:nth-child(3) .img-frame{
+		background: url(img/cookie.jpg) no-repeat center center;
+		background-size: 100% auto;}
+
+	.section  .wrap  .menu-list  .c3 .three2 .polaroid:nth-child(1) .img-frame{
+		background: url(img/chocolate.jpg) no-repeat center center;
+		background-size: auto 100%;}
+	.section  .wrap  .menu-list  .c3 .three2 .polaroid:nth-child(2) .img-frame{
+		background: url(img/pistachio.jpg) no-repeat center center;
+		background-size: 100% auto;}
+	.section  .wrap  .menu-list  .c3 .three2 .polaroid:nth-child(3) .img-frame{
+		background: url(img/lemon.jpg) no-repeat center center;
+		background-size: 100% auto;}
+
+	
+	.section  .wrap  .menu-list  .c3 .three3 .polaroid:nth-child(1) .img-frame{
+		background: url(img/redvelvet.jpg) no-repeat center center;
+		background-size: 100% auto ;}
+	.section  .wrap  .menu-list  .c3 .three3 .polaroid:nth-child(2) .img-frame{
+		background: url(img/saltedcaramel.jpg) no-repeat center center;
+		background-size:100% auto ;}
+	.section  .wrap  .menu-list  .c3 .three3 .polaroid:nth-child(3) .img-frame{
+		background: url(img/peach.jpg) no-repeat center center;
+		background-size:100% auto ;}
+
+
+	.section  .wrap  .menu-list  .three2{display: none;}
+
+	.section  .wrap  .menu-list  .three3{display: none;}
+
+	
+
+.section  .wrap  .menu-list  .column .three  .polaroid:hover .img-frame{
+	background-size: 105% auto;
+}
+.section  .wrap  .menu-list  .column .three  .polaroid:hover .h{
+	background-size: auto 105%;
+}
+
+
+/* -----.more--- */
+
+.section  .wrap  .more{
+	width: 120px;
+	height: 50px;
+	background: white;
+	margin: 50px auto;
+	font-size: 20px;
+	line-height: 46px;
+	color: #002865;
+	text-align: center;
+	border: 2px solid #002865;
+	transition: 0.5s;
+	cursor: pointer;
+	}
+
+.section  .wrap  .more:hover,
+.section  .wrap  .more:active{
+	background: #002865;
+	color: #fff;
+}
+
+/* media query------------------------------------------------------------ */
+
+@media screen and (max-width: 1400px){
+/*	.section .wrap{width: 68%;}*/
+	.section .wrap{margin-left: 18%;}
+
+}
+@media screen and (max-width: 1200px){
+	.section .wrap{width: 75%;
+		margin-left: 22%;}
+	.section .wrap .title{font-size: 32px;}
+	.section .wrap .menu-list .column .column-title{font-size: 20px;}/**/
+	
+	.section .wrap .menu-list .column .three .polaroid{padding: 10px;}
+	.section .wrap .menu-list .column .three .polaroid .img-name{font-size: 16px;}/**/
+	
+
+}
+@media screen and (max-width: 960px){
+	.section .wrap{width: 72%;
+		margin-left: 200px;}
+	.section .wrap .menu-list .column{
+		padding: 20px 10px;}
+	.section .wrap .menu-list .column .column-title{
+		height: 30px;
+		line-height: 30px;
+		font-size: 18px;}
+	.section .wrap .menu-list .column .three .polaroid span{
+		bottom: 15px;
+		margin-left: -30%;
+		width: 0%;
+		}
+	.section .wrap .menu-list .column .three .polaroid:hover span,
+	.section .wrap .menu-list .column .three .polaroid:active span{
+		width: 60%;
+		}
+	.section .wrap .menu-list .column .three .polaroid .img-name{
+		height: 25px;
+		line-height: 25px;
+		font-size: 15px;
+		}
+
+	.section .wrap .more {
+		width: 90px;
+		height: 44px;
+		font-size: 16px;
+		line-height: 40px;}
+
+
+}
+@media screen and (max-width: 768px){
+	.section .wrap{width: 90%;
+		margin-left: auto;
+		margin-right: auto;}
+	.top-btn{
+		bottom: 50px;
+		right: 50px;
+	}
+}
+@media screen and (max-width: 600px){
+	
+	.section .wrap .menu-list .c1{width: 49%;}
+	.section .wrap .menu-list .c2{width: 49%;
+		margin-right: 0;}
+
+	.section .wrap .menu-list .c3{display: none;}
+
+	.section .wrap .menu-list .column .column-title{font-size: 20px;}
+
+	.section .wrap .menu-list .column .three .polaroid span{
+		bottom: 15px;
+		margin-left: -25%;
+		width: 0%;
+		}
+	.section .wrap .menu-list .column .three .polaroid:hover span,
+	.section .wrap .menu-list .column .three .polaroid:active span{
+		width: 50%;
+		}
+	.section .wrap .menu-list .column .three .polaroid .img-name{
+		height: 25px;
+		line-height: 25px;
+		font-size: 17px;
+		}
+
+}
+@media screen and (max-width: 480px){
+
+	.section .wrap{width: 96%;}
+	.section .wrap .title{font-size: 28px;}
+
+}
+@media screen and (max-width: 360px){
+	
+	.section .wrap .menu-list .column .three .polaroid .img-name{
+		font-size: 15px;
+		}
+
+}
